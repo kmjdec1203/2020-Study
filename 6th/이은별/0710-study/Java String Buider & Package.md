@@ -1,14 +1,30 @@
-###  Java String Builer
+###  Java String Builer  & String
 
 ===========================
 
+1. #### String의 정의
+
 **String은 문자열**, String은 소위 불변 객체라고 한다.
 
-__문자열 __변수 타입으로 String을 많이 사용합니다. (String은 클래스 타입 입니다, 즉 char의 배열로 이루어진 클래스 타입이다.)
+__문자열 __변수 타입으로 String을 사용한다. (String은 클래스 타입 이다, 즉 char의 배열로 이루어진 클래스 타입이다.)
 
-Java String 과 Java Buffer는 같은 역할
 
-차이점은 String Builer 는 동시에 처리하는 것을 허용하지 않음 
+
+2. #### String 과 StringBuilder 의 차이점
+
+String 과 StringBuilder 의 가장 큰 차이점은 String은 **불변**/ StringBuilder는 **가변**의 속성을 가지고 있는것이다.
+
+**String**는 인스턴트 메모리 공간에 생성되며 그 메모리 공간은 절대 변하지 않는다. 만약에 생성된 String 에 수정이 일어난다면 **새로운 인스턴스** 메모리를 생성하여 그 값을 넣어준다.
+
+**불변 객체**이기 때문에 변하지 않는 문자열을 자주 읽어 들이는 경우 String 을 사용하기 좋다.
+
+하지만 문자열추가, 수정, 삭제들을 할때 처럼 연산이 번번하게 발생하는 알고리즘 같은 경우는 **StringBuilder**을 사용하는 것이 훨씬 좋다.
+
+
+
+Java String 과 Java Buffer는 같은 역할을 한다.
+
+> *차이점은 String Builer 는 동시에 처리하는 것을 허용하지 않음* 
 
 **__단일 스레드__** 환경에서만 사용 가능
 
